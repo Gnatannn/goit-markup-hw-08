@@ -836,6 +836,12 @@ body {
     justify-content: center;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer-wrap {
+    align-items: baseline;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .footer-box {
     display: flex;
@@ -845,6 +851,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .footer-box {
+    flex-direction: row;
+    align-items: baseline;
     margin-right: 70px;
     margin-bottom: 0px;
   }
@@ -986,6 +994,8 @@ body {
 @media screen and (min-width: 1200px) {
   .footer-form-subscribe {
     display: flex;
+    flex-direction: row;
+    align-items: baseline;
     flex-direction: column;
     justify-content: flex-end;
     text-align: left;
