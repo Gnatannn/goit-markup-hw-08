@@ -23,6 +23,9 @@
         flex-wrap: wrap;
         justify-content: center;
     }
+    @media screen and (min-width:1200px){
+        align-items: baseline;
+    }
 }
 
 .footer-box {
@@ -33,6 +36,7 @@
     }
     @media screen and (min-width:1200px){
         margin-right: 70px;
+        margin-bottom: 0px;
     }
 }
 
@@ -229,7 +233,7 @@
     @media screen and (min-width:1200px){
         width: 358px;
         margin-right: 12px;
-        
+        margin-bottom: 0px;
     }
 }
 
