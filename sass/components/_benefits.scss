@@ -1,6 +1,8 @@
 .benefits {
     background-color: var(----main-background);
+    @media screen and (min-width:1200px){
     padding-bottom: 0;
+    }
 }
 
 .benefits-list {
