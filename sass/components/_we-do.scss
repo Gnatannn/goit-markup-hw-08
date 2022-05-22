@@ -1,5 +1,8 @@
 .we-do {
     background-color: var(----main-background);
+    @media screen and (max-width: 1199px){
+        display: none;
+    }
 }
 
 .we-do-list {

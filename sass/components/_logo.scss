@@ -1,9 +1,15 @@
 .logo {
     font-family: var(--text-font-second);
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
     letter-spacing: 0.03em;
+    @media screen and (max-width:1199px){
+        font-size: 26px;
+        line-height: 1.1666;
+    }
+    @media screen and (min-width:1200px) {
+        font-size: 26px;
+        line-height: 1.19;
+    }
 }
 
 .header__logo {
@@ -16,7 +22,12 @@
 
 .header__logo-text--right {
     color: var(--first-text);
+    @media screen and (min-width:768px){
+    margin-right: 88px;
+    }
+    @media screen and (min-width:1200px){
     margin-right: 93px;
+    }
 }
 
 .footer__logo {

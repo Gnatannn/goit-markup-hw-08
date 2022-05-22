@@ -1,28 +1,72 @@
 .hero {
     background-color: #C4C4C4;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    max-width: 1600px;
-    height: 600px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-hero.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top: 118px;
+    padding-bottom: 118px;
+
+    @media screen and (max-width: 759px){
+    height: 400px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+    url(../images/bg-hero-480-1.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/bg-hero-480-2.jpg);
+    }
+    }
+        
+    @media screen and (min-width: 760px) and (max-width:1199px) {
+    height: 400px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/bg-hero-760-1.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/bg-hero-760-2.jpg);
+    }
+    }
+        
+    @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    height: 600px;
+    max-width: 1600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+    url(../images/bg-hero-1200-1.jpg);
+    background-size: cover;
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/bg-hero-1200-2.jpg);
+    }
+    }
+        
 }
 
 .hero__title {
-    font-weight: 900;
+font-weight: 900;
+font-size: 26px;
+line-height: 1.62;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: #FFFFFF;
+max-width: 360px;
+margin: 0 auto;
+margin-bottom: 30px;
+    @media screen and (min-width: 1200px) {
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #ffffff;
     max-width: 696px;
-    margin: 0 auto;
-    margin-bottom: 30px;
+    }
 }
 
 .hero__btn {
